@@ -1,0 +1,10 @@
+import pandas as pd
+import io
+
+data_file = pd.read_csv(r'C:\Users\User\Desktop\Data points2.csv')
+
+str_data_file = io.StringIO(data_file)
+
+for c in str_data_file:
+    if c == "!":
+        str.replace(__old=c, __new='', __count=None)
